@@ -148,7 +148,7 @@ ${<TerminalInput>now --public</TerminalInput>}
 
 Check [Why does my deployment have occasionally long response times?](/docs/other/faq#why-does-my-deployment-have-occasionally-long-response-times)
 
-## If I need a proper invoice how do I get it?
+## If I need a special invoice how do I get it?
 
 We send a receipt via email for every transaction made via your card. For special invoicing requests, please contact us at [support@zeit.co](support@zeit.co?subject=Invoice) with the following information:
 
