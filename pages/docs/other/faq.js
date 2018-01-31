@@ -163,6 +163,6 @@ Please note that we can only honor special invoicing requests that come from the
 
 ## How do I remove or delete my account?
 
-Contact us to [support@zeit.co](support@zeit.co?subject=Remove%20account) from the account email address.
+Contact us to [support@zeit.co](support@zeit.co?subject=Remove%20account) from the account's email address.
 
 `)
