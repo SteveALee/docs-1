@@ -122,7 +122,7 @@ For the moment it is not possible to remove a team. If you keep it with the [OSS
 
 Check our guide on how to setup a redirect
 
-> [Setting up a Redirect with Now](/docs/examples/redirect)
+> [Setting up a Redirect with Now](/docs/guides/redirect)
 
 ## Can I run a bot with Now?
 
