@@ -165,4 +165,8 @@ Please note that we can only honor special invoicing requests that come from the
 
 Contact us to [support@zeit.co](support@zeit.co?subject=Remove%20account) from the account's email address.
 
+## How many levels of subdomain can I use?
+
+You can define any level of subdomains for a custom domain you own. For \`.now.sh\` domains you can only use one level.
+
 `)
