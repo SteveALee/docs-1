@@ -35,6 +35,7 @@ export const H2 = ({ children }) => (
         h2 {
           font-weight: normal;
           font-size: 24px;
+          margin-top: 75px;
         }
       `}
     </style>
@@ -49,6 +50,7 @@ export const H3 = ({ children }) => (
         h3 {
           font-weight: bold;
           font-size: 18px;
+          margin-top: 75px;
         }
       `}
     </style>
@@ -60,9 +62,10 @@ export const H4 = ({ children, isCommand }) => (
     {children}
     <style jsx>
       {`
-        h3 {
+        h4 {
           font-weight: bold;
           font-size: 16px;
+          margin-top: 75px;
         }
 
         .command {
@@ -85,6 +88,7 @@ export const H5 = ({ children }) => (
         h5 {
           font-weight: bold;
           font-size: 15px;
+          margin-top: 75px;
         }
       `}
     </style>
