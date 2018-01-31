@@ -14,7 +14,7 @@ export default withDoc({
   editUrl: 'pages/docs/other/faq.js',
 })(markdown(components)`
 
-## How Can I Deploy and Alias in a Single Command?
+## How do I deploy and alias in a single command?
 
 Create a [configuration file](/docs/features/configuration) with the keys [alias](/docs/features/configuration#alias-(string|array)) and [name](/docs/features/configuration#name-(string)) similar to this one:
 
@@ -27,27 +27,27 @@ Then run the following command:
 
 ${<TerminalInput>now && now alias</TerminalInput>}
 
-It will deploy your application under the configured name (eg. \`my-app-hjrehxuuih.now.sh\`) and then alias the latest deployment with the configured alias.
+It will deploy your application under the configured name and then alias the latest deployment with the configured alias.
 
-### How Can I Then Remove the Old Deployment?
+### How do I remove the old deployment?
 
-Note you don't really need to do it, the old deployment will eventually [freeze](/docs/guides/app-lifecycle-and-scalability#instances-&-scaling) and if you keep it it can let you rollback easily by just changing the alias.
+Note that you do not really need to do it, the old deployment will eventually [freeze](/docs/guides/app-lifecycle-and-scalability#instances-&-scaling) and, if you keep it, it can let you rollback easily by just changing the alias.
 
-But if you still want to do it it's possible using the following command:
+But if you still want to do it it is possible using the following command:
 
 ${<TerminalInput>now rm my-app --safe --yes</TerminalInput>}
 
-That command will remove all the non aliased deployment of the project with the name \`my-app\`. This can be run after \`now alias\` command to remove the old deployment of the project.
+The command will remove all the non aliased deployment of the project with the name \`my-app\`. This can be run after \`now alias\` command to remove the previous deployment of the project.
 
 ${<TerminalInput>now && now alias && npm run my-app --safe --yes</TerminalInput>}
 
-## How Can I Pick the Region My Application Will Be Deployed to?
+## How do I pick the deployment region(s) for my application??
 
 For the moment ${<Now color="#000" />} only has support for one region called [SFO](https://sfo.now.sh).
 
-We will eventually enable another region in Europa called [BRU](https://bru.now.sh). And more regions in the future.
+We will eventually enable another region in Europe called [BRU](https://bru.now.sh). And more regions in the future.
 
-## How Can I Change My Account Email Address?
+## How do I change my account's email address?
 
 Contact us at [support@zeit.co](mailto:support@zeit.co?subject=Email%20change) from your account email address letting us know what is your desired email address. We will send an email with validations codes similars to \`Sparkling Red-handed Tamarin\` to each address, after receiving a response with the codes we can procede with the change.
 
@@ -55,7 +55,7 @@ Contact us at [support@zeit.co](mailto:support@zeit.co?subject=Email%20change) f
 
 Each instance has up to 1GB of RAM and 1 CPU in [any paid plan](/pricing).
 
-For deployments under the OSS plan they have the half of those resources.
+For deployments under the OSS plan they have half of those resources.
 
 The storage limit is defined under the pricing table.
 
@@ -74,7 +74,7 @@ This model enable a few interesting benefits
 - **Easy rollback**${<br />}
   You can just move your alias to the old deployment to have immediate rollbacks.
 - **Staging and Production deployments**${<br />}
-  A new deployment gives you a unique URL you can use as staging, share it with co-workers or clients and then after it's confirmed it works you can upgrade it to production with a single command \`now alias\`.
+  A new deployment gives you a unique URL you can use as staging, share it with co-workers or clients and then after it is confirmed it works you can upgrade it to production with a single command, \`now alias\`.
 - **Zero-Downtime deployment**${<br />}
   Most technologies will require your server to be restarted (eg. Node.js). Thanks to ${<Now color="#000" />} gives you a new deployment you can wait until the deployment is ready to change the alias and avoid any downtime in the deployment process.
 
@@ -82,7 +82,11 @@ This model enable a few interesting benefits
 
 Now deployments **must** expose a [single](http://localhost:5800/docs/deployment-types/node#port-selection) [port](http://localhost:5800/docs/deployment-types/docker#port-selection) running an HTTP or WebSocket server. But thanks to Docker it is possible to run a database in the same container of the HTTP API consuming it.
 
-But note that due the immutability of instances each deploy will reset the database to zero, at the same time each [instance of the same deployment](docs/getting-started/scaling) will have it is own data, and if the deployment freeze (has zero running instances) when it unfreeze the database will be also cleared.
+Note that due the immutability of deployments there are many cases where you will lose the data of your database.
+
+- A new deployment will have a newly created database from the ground.
+- Each [instance of the same deployment](docs/getting-started/scaling) will have it is on data.
+- If the deployment freeze (has zero running instances) when it unfreeze the database will be also cleared.
 
 ## Can I Transfer a Domain from or to ZEIT Domains?
 
