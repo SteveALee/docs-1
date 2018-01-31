@@ -63,7 +63,7 @@ The storage limit is defined under the pricing table.
 
 For the moment there is no way to change that, it is on the roadmap however.
 
-For [enterprise customers](mailto:enterprise@zeit.co?subject=Custom%20Hardware%20Resources) we can offer customizations includin better hardware.
+For [enterprise customers](mailto:enterprise@zeit.co?subject=Custom%20Hardware%20Resources) we can offer customizations including better hardware.
 
 ## How Can I Update My Deployment Code?
 
