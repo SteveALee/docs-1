@@ -85,7 +85,7 @@ Now deployments **must** expose a [single](http://localhost:5800/docs/deployment
 Note that due the immutability of deployments there are many cases where you will lose the data of your database.
 
 - A new deployment will have a newly created database from the ground.
-- Each [instance of the same deployment](docs/getting-started/scaling) will have it is on data.
+- Each [instance of the same deployment](docs/getting-started/scaling) will have it is own data.
 - If the deployment freeze (has zero running instances) when it unfreeze the database will be also cleared.
 
 ## Can I transfer domains into/out of ZEIT Domains?
