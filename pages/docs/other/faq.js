@@ -167,6 +167,6 @@ Contact us to [support@zeit.co](support@zeit.co?subject=Remove%20account) from t
 
 ## How many levels of subdomain can I use?
 
-You can define any level of subdomains for a custom domain you own. For \`.now.sh\` domains you can only use one level.
+You can define up to 10 levels of subdomains for a custom domain you own. For \`.now.sh\` domains you can only use one level.
 
 `)
