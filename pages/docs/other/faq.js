@@ -41,7 +41,7 @@ The command will remove all the non aliased deployment of the project with the n
 
 ${<TerminalInput>now && now alias && npm run my-app --safe --yes</TerminalInput>}
 
-## How do I pick the deployment region(s) for my application??
+## How do I pick the deployment region(s) for my application?
 
 For the moment ${<Now color="#000" />} only has support for one region called [SFO](https://sfo.now.sh).
 
