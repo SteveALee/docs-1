@@ -148,4 +148,21 @@ ${<TerminalInput>now --public</TerminalInput>}
 
 Check [Why does my deployment have occasionally long response times?](/docs/other/faq#why-does-my-deployment-have-occasionally-long-response-times)
 
+## If I need a proper invoice how do I get it?
+
+We send a receipt via email for every transaction made via your card. For special invoicing requests, please contact us at [support@zeit.co](support@zeit.co?subject=Invoice) with the following information:
+
+- Company name
+- Billing contact (full name)
+- Address
+- Contact phone number
+- VAT number (if applicable)
+- Any additional information you may require
+
+Please note that we can only honor special invoicing requests that come from the personal account's email address or, in the event the request pertains to a team, the team owner's email address.
+
+## How do I remove or delete my account?
+
+Contact us to [support@zeit.co](support@zeit.co?subject=Remove%20account) from the account email address.
+
 `)
