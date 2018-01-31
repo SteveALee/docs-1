@@ -51,7 +51,7 @@ We will eventually enable another region in Europe called [BRU](https://bru.now.
 
 Contact us at [support@zeit.co](mailto:support@zeit.co?subject=Email%20change) from your account email address letting us know what is your desired email address. We will send an email with validations codes similars to \`Sparkling Red-handed Tamarin\` to each address, after receiving a response with the codes we can procede with the change.
 
-## What Are the Hardware Specifications of the Deployment Instances?
+## What are the hardware specifications of the deployment instances?
 
 Each instance has up to 1GB of RAM and 1 CPU in [any paid plan](/pricing).
 
@@ -59,13 +59,13 @@ For deployments under the OSS plan they have half of those resources.
 
 The storage limit is defined under the pricing table.
 
-### I Need More Resources, Is There a Way to Configure It?
+### How do I allocate more resources for my application?
 
 For the moment there is no way to change that, it is on the roadmap however.
 
 For [enterprise customers](mailto:enterprise@zeit.co?subject=Custom%20Hardware%20Resources) we can offer customizations including better hardware.
 
-## How Can I Update My Deployment Code?
+## How do I update my deployment's files or code?
 
 Deployments are immutable, this mean they can not be modified after created, to update your application you need to deploy the new version using the command \`now\`, after that you will get a new unique deployment URL similar to \`my-app-hjrehxuuih.now.sh\`.
 
@@ -78,7 +78,7 @@ This model enable a few interesting benefits
 - **Zero-Downtime deployment**${<br />}
   Most technologies will require your server to be restarted (eg. Node.js). Thanks to ${<Now color="#000" />} gives you a new deployment you can wait until the deployment is ready to change the alias and avoid any downtime in the deployment process.
 
-## Can I Run a Database inside Now?
+## Can I run a database on the Now platform?
 
 Now deployments **must** expose a [single](http://localhost:5800/docs/deployment-types/node#port-selection) [port](http://localhost:5800/docs/deployment-types/docker#port-selection) running an HTTP or WebSocket server. But thanks to Docker it is possible to run a database in the same container of the HTTP API consuming it.
 
@@ -88,25 +88,25 @@ Note that due the immutability of deployments there are many cases where you wil
 - Each [instance of the same deployment](docs/getting-started/scaling) will have it is on data.
 - If the deployment freeze (has zero running instances) when it unfreeze the database will be also cleared.
 
-## Can I Transfer a Domain from or to ZEIT Domains?
+## Can I transfer domains into/out of ZEIT Domains?
 
 We are working on a transfer tool to make this process smooth. In the meanwhile you can contact us to [support@zeit.co](mailto:support@zeit.co?subject=Domain%20Transfer) with the domain you want to transfer.
 
-## Can I Use Docker-Compose with Now?
+## Can I use docker-compose with Now?
 
 For the moment ${<Now color="#000" />} does not support docker-compose, you can keep an eye to our [open issue in GitHub](https://github.com/zeit/now-cli/issues/294) to now when this is ready.
 
-## Is There a Way to Use HTTP Instead of HTTPS?
+## How do I disable HTTPS and just use HTTP instead?
 
 There is no way, for the moment, to disable SSL. All the ${<Now color="#000" />} deployments are HTTPS by default.
 
-## How Can I Setup an Environment Variable with an @ at the Beginning of the Value?
+## How do I specify an environment variable with a value that starts with \`@\`?
 
 For the moment we will always try to replace any environment variable which value start with an \`@\` with a [secret](/docs/features/env-and-secrets), we have [an open issue for this on GitHub](https://github.com/zeit/now-cli/issues/1061).
 
 As a workaround you can setup a secret which value contains the string with a \`@\`.
 
-## Why My Deployment Sometimes Take Too Long to Reply?
+## Why does my deployment have occasionally long response times?
 
 Deployments have a [default scale configuration](/docs/getting-started/scaling#default-scaling) which configure it to freeze after a while due to inactivity.
 
@@ -114,17 +114,17 @@ This let you have any amount of deployments without caring about your running in
 
 This behaviour can be completely avoided using the \`now scale\` command as describe in the link above.
 
-## How Can I Remove a Team?
+## Can I remove or delete a team?
 
 For the moment it is not possible to remove a team. If you keep it with the [OSS plan](/pricing) it can be safely ignored and you are not going to be charged.
 
-## How Can I Setup a Redirect from www.domain.com to domain.com?
+## How do I create a redirection from www.mysite.com to mysite.com?
 
 Check our guide on how to setup a redirect
 
 > [Setting up a Redirect with Now](/docs/examples/redirect)
 
-## Can I Run a Bot with Now?
+## Can I run a bot with Now?
 
 Yes, you can, remember to expose a single port running an HTTP server.
 
@@ -134,20 +134,18 @@ ${<TerminalInput>now scale my-bot-hjnfyyugps.now.sh 0</TerminalInput>}
 
 This will ensure the bot is not running anymore before you remove it or deployed a new version.
 
-## If I Purchase a Domain with ZEIT Domains Can I Change the Nameservers?
+## If I purchase a domain with ZEIT Domains can I change the nameservers?
 
 For the moment is not possible to do it via the [Now CLI](/docs/features/now-cli) but you can contact us to [support@zeit.co](mailto:support@zeit.co?subject=Change%20Purchased%20Domain%20Nameserver) with the desired nameservers and after a security verification of the ownership we can do it for you.
 
-## How Can I Avoid the Question about the Deployment Being Public under the Oss Plan?
+## How can I avoid the question about the deployment being public under the OSS plan?
 
 If you add the \`--public\` option when deploying you will not be asked to confirm the deployment will be public.
 
 ${<TerminalInput>now --public</TerminalInput>}
 
-## How Can I Prevent My Deployment to Sleep?
+## How do I prevent my deployment to sleep?
 
-Deployments have a [default scale configuration](/docs/getting-started/scaling#default-scaling) which configure it to freeze after a while due to inactivity.
-
-This behaviour can be completely avoided using the \`now scale\` command as describe in the link above.
+Check [Why does my deployment have occasionally long response times?](/docs/other/faq#why-does-my-deployment-have-occasionally-long-response-times)
 
 `)
