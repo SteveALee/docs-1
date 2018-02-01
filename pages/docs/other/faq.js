@@ -134,7 +134,7 @@ ${<TerminalInput>now scale my-bot-hjnfyyugps.now.sh 0</TerminalInput>}
 
 This will ensure the bot is not running anymore before you remove it or deployed a new version.
 
-## If I purchase a domain with ZEIT Domains can I change the nameservers?
+## How do I change the nameservers of a domain purchasedwith ZEIT Domains?
 
 For the moment is not possible to do it via the [Now CLI](/docs/features/now-cli) but you can contact us to [support@zeit.co](mailto:support@zeit.co?subject=Change%20Purchased%20Domain%20Nameserver) with the desired nameservers and after a security verification of the ownership we can do it for you.
 
@@ -168,5 +168,41 @@ Contact us to [support@zeit.co](support@zeit.co?subject=Remove%20account) from t
 ## How many levels of subdomain can I use?
 
 You can define up to 10 levels of subdomains for a custom domain you own. For \`.now.sh\` domains you can only use one level.
+
+## How do I make my deployments private?
+
+All the deployments made with a paid account or team are private by default.
+
+### Why do I still see the source code of my deployment if they are private?
+
+If you are logged in [zeit.co](/login) you can still access the source when going to \`/_src\`.
+
+## Is it possible to host WordPress to Now Platform?
+
+Check our WordPress example repository.
+
+> [https://github.com/now-examples/wordpress](https://github.com/now-examples/wordpress)
+
+## Is it possible to host Ghost to Now Platform?
+
+Check our Ghost example repository.
+
+> [https://github.com/now-examples/ghost](https://github.com/now-examples/ghost)
+
+## How do I add my deployments to a list of whitelisted IP addresses?
+
+The IP addresses of ${<Now color="#000" />} deployments are too dynamic and for that reason we don't provide a list of them.
+
+Our recommendation when connecting to external services (eg. a database) is to use a strong password and SSL.
+
+## How do I setup an email for my domain purchased with Now Domains?
+
+${<Now color="#000" />} doesn't provide you with an email server for your custom domains. You can use [\`now dns\`](/docs/features/dns) to setup MX records pointing to any external service.
+
+## How can I setup basic HTTP authentication for my deployment?
+
+Any HTTP authentication should be implemented inside the deployment code
+
+For static sites you can use [zeit/serve](https://github.com/zeit/serve) with the \`--auth\` flag.
 
 `)
