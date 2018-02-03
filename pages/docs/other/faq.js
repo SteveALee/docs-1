@@ -233,9 +233,9 @@ For the moment we do not support wildcard subdomains.
 
 ## Can I have a refund for a domain purchase?
 
-No, there is no way to release a domain after it was purchased until the renewal, because of that we can not give you a refund.
+No, there is no way to release a domain after it was purchased until the next renewal date, because of that we can not give you a refund.
 
-If you don't want to renew a domain purchased with Now Domains remove it with the following command:
+If you do not want to renew a domain purchased with Now Domains remove it with the following command:
 
 ${<TerminalInput>now domain rm mysite.com</TerminalInput>}
 
