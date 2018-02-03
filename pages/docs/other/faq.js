@@ -88,6 +88,8 @@ Note that due the immutability of deployments there are many cases where you wil
 - Each [instance of the same deployment](docs/getting-started/scaling) will have it is own data.
 - If the deployment freeze (has zero running instances) when it unfreeze the database will be also cleared.
 
+We recommend you to run your database in any hosted DB service, you can [ask our community for recommendations](/chat).
+
 ## Can I transfer domains into/out of ZEIT Domains?
 
 We are working on a transfer tool to make this process smooth. In the meanwhile you can contact us to [support@zeit.co](mailto:support@zeit.co?subject=Domain%20Transfer) with the domain you want to transfer.
@@ -214,5 +216,11 @@ You can read how to use private npm modules on our guide:
 For private GitHub repositories you can follow the GitHub guide on:
 
 > [Easier builds and deployments using Git over HTTPS and OAuth](https://github.com/blog/1270-easier-builds-and-deployments-using-git-over-https-and-oauth)
+
+## Is it possible to reuse an existing alias?
+
+Yes, you can use \`now alias\` to move an existing alias from a deployment to another the same way you use it to assign it the first time.
+
+Note that you can not use an alias already used by another user until they remove it.
 
 `)
