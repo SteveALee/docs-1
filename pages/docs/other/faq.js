@@ -223,4 +223,8 @@ Yes, you can use \`now alias\` to move an existing alias from a deployment to an
 
 Note that you can not use an alias already used by another user until they remove it.
 
+## Why does my deployment keep running after I removed it?
+
+The actual deletion of a deployment could take around a minute, but sometimes this could take longer. If your deployment is doing side-effects without a request (eg. a process running every _N_ minutes) we recommend you to first scale it to zero instances and then remove it.
+
 `)
