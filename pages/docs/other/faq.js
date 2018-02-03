@@ -227,4 +227,16 @@ Note that you can not use an alias already used by another user until they remov
 
 The actual deletion of a deployment could take around a minute, but sometimes this could take longer. If your deployment is doing side-effects without a request (eg. a process running every _N_ minutes) we recommend you to first scale it to zero instances and then remove it.
 
+## Does Now supports wildcard subdomains?
+
+For the moment we do not support wildcard subdomains.
+
+## Can I have a refund for a domain purchase?
+
+No, there is no way to release a domain after it was purchased until the renewal, because of that we can not give you a refund.
+
+If you don't want to renew a domain purchased with Now Domains remove it with the following command:
+
+${<TerminalInput>now domain rm mysite.com</TerminalInput>}
+
 `)
