@@ -239,4 +239,16 @@ If you do not want to renew a domain purchased with Now Domains remove it with t
 
 ${<TerminalInput>now domain rm mysite.com</TerminalInput>}
 
+## Do you offer custom support or help with Next.js?
+
+Yes, we do, let us know on [enterprise@zeit.co](enterprise@zeit.co?subject=Next.js%20Custom%20Support).
+
+## Is it possible to remove the logs of a deployment?
+
+For the moment is not possible.
+
+## Is it possible to download the files or code of my deployments?
+
+Is not possible from the CLI nor the web, contact us at [support@zeit.co](support@zeit.co?subject=Download%20Deployment%20Code) from the personal account's email address or, in the event the request pertains to a team, the team owner's email address and we can help you.
+
 `)
