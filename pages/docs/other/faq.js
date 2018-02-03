@@ -251,4 +251,14 @@ For the moment is not possible.
 
 Is not possible from the CLI nor the web, contact us at [support@zeit.co](support@zeit.co?subject=Download%20Deployment%20Code) from the personal account's email address or, in the event the request pertains to a team, the team owner's email address and we can help you.
 
+## How do I run scheduled tasks on the Now platform?
+
+While we do not have a built in way to run scheduled tasks is it possible.
+
+Create a deployment with a basic HTTP service running and initialize a \`setInterval\` and a second deployment with the code of your tasks running behind an HTTP server.
+
+Every time you need to run the task the first deployment must send an HTTP request to the second deployment. Using two different deployments will let you change the code of your task without restarting the interval.
+
+Remember to use [scale](/docs/getting-started/scaling) the first deployment to have [always one running instance](/docs/getting-started/scaling#fixed-scaling).
+
 `)
