@@ -205,4 +205,14 @@ Any HTTP authentication should be implemented inside the deployment code
 
 For static sites you can use [zeit/serve](https://github.com/zeit/serve) with the \`--auth\` flag.
 
+## How do I use private npm modules or GitHub repositories?
+
+You can read how to use private npm modules on our guide:
+
+> [Using Private npm Dependencies](/docs/features/private-npm)
+
+For private GitHub repositories you can follow the GitHub guide on:
+
+> [Easier builds and deployments using Git over HTTPS and OAuth](https://github.com/blog/1270-easier-builds-and-deployments-using-git-over-https-and-oauth)
+
 `)
