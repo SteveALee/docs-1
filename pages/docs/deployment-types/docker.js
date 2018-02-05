@@ -47,7 +47,7 @@ Once the container is built, the snapshot will be used when the deployment is sc
 
 There are no limitations inside Docker deployments when it comes to the file system. It's always writable and readable.
 
-## Port Routing
+## Port Selection
 
 ${<Now color="#000" />} deployment instances always listen on port \`443\` (HTTPS) of their given url. Your server code can expose a HTTP service on **any port** of your choice (not multiple ones). ${<Now color="#000" />} will then route requests received on port \`443\` to your HTTP service port and its response we be returned by the deployment instance.
 
