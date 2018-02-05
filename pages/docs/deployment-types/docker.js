@@ -49,7 +49,7 @@ There are no limitations inside Docker deployments when it comes to the file sys
 
 ## Port Routing
 
-${<Now color="#000" />} deployment instances always listen on port \`443\` (HTTPS) of their given url. Your server code can expose an HTTP service on **any port** of your choice (not multiple ones). ${<Now color="#000" />} will then route requests received on port \`443\` to your HTTP service port and visitors will see the response.
+${<Now color="#000" />} deployment instances always listen on port \`443\` (HTTPS) of their given url. Your server code can expose an HTTP service on **any port** of your choice (not multiple ones). ${<Now color="#000" />} will then route requests received on port \`443\` to your HTTP service port and ${<Now color="#000" />} deployment instances always listen on port \`443\` (HTTPS) of their given url. Your server code can expose an HTTP service on **any port** of your choice (not multiple ones). ${<Now color="#000" />} will then route requests received on port \`443\` to your HTTP service port and its response we be returned by the deployment instance.
 
 The port that listens for incoming HTTP traffic needs to be defined either in the \`Dockerfile\` that's being used inside the deployment, or the \`Dockerfile\` it's "inheriting" from.
 
